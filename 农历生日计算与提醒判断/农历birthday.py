@@ -5,7 +5,9 @@ from 农历生日计算与提醒判断 import facade
 
 
 def main(list):
-
+    # list = [
+    #     ['12-25', 'test1']  #第一个是农历生日，第二个是名字
+    # ]
 
     # 获取今天的农历日期
     today = LunarDate.today()

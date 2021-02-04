@@ -10,7 +10,7 @@ on:
   # 定时， 这里是国际标准时间
   schedule:
     #  cron表达式，分别对应，分，时，天，月，年
-    - cron: '0 16 * * *'
+    - cron: '0 0 * * *'
 
 # 任务
 jobs:
@@ -25,7 +25,7 @@ jobs:
         env:
           var: hello github
           # run,具体的一个步骤运行的命令或者 action。
-        run: |
+        run: 
           echo $var
 
       - name: 'Checkout codes'
