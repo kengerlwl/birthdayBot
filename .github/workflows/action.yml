@@ -2,6 +2,7 @@
 name: 'GitHub Actions  Bot'
 
 
+
 # 什么时候执行
 on:
   # 当push的时候
@@ -25,7 +26,7 @@ jobs:
         env:
           var: hello github
           # run,具体的一个步骤运行的命令或者 action。
-        run: 
+        run:
           echo $var
 
       - name: 'Checkout codes'

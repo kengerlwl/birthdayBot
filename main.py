@@ -1,6 +1,8 @@
 
 # 接收者，也就是你的邮箱, 这里我写到list.yml里面去进行设置了
-reciver = '2892211452@qq.com'
+file = open('list.yml', encoding='utf-8')
+reciver = file.readline().split(':')[1].replace('\n', '')
+# reciver = '2892211452@qq.com'
 
 
 from 农历生日计算与提醒判断 import 农历birthday
@@ -12,8 +14,7 @@ if __name__ == '__main__':
     # ]
     birthdayList = []
 
-    file = open('list.yml', encoding='utf-8')
-    reciver = file.readline().split(':')[1].replace('\n', '')
+
 
     lines =  file.readlines()
 
