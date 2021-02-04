@@ -40,8 +40,11 @@ def main(list):
         if message:
             # 转化为公历
             solarDay = tmpNow.to_solar_date()
-            message= message + '是' + name + '的生日' +'  具体日期是: '+ str(solarDay)
-            facade.update(message, flag= True)
+            try:
+                message= message + '是' + name + '的生日' +'  具体日期是: '+ str(solarDay)
+                facade.update(message, flag= True)
+            except:
+                pass
 
 
         else:

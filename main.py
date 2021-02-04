@@ -20,7 +20,10 @@ if __name__ == '__main__':
 
     for i in lines:
         i = i.split(':')
-        birthdayList.append([i[0], i[1].replace('\n', '')])
+        try:
+            birthdayList.append([i[0], i[1].replace('\n', '')])
+        except:
+            print(i, ' error')
 
 
 
