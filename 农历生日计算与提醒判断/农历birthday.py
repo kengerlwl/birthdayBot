@@ -22,17 +22,13 @@ def main(list):
         i = i.split('-')
         tmpMonth = int(i[0])
         tmpDay = int(i[1])
-        nextYearDay = LunarDate(year+1, tmpMonth, tmpDay)  # 明年的生日日期，为了应对年末的特殊日期
-
         tmpNow = LunarDate(year, tmpMonth, tmpDay)  # 今年的生日日期
+        if tmpNow < today:
+            tmpNow = LunarDate(year+1, tmpMonth, tmpDay)  # 今年的生日日期
         # print(tmpNow)
         dis = today - tmpNow
         dis = dis.days
 
-        dis2 = nextYearDay - today
-        dis2 = dis2.days
-        # print(today,tmpNow,nextYearDay)
-        dis = min(dis, dis2)  # 选取最近的一个，
 
 
         message = None
