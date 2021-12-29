@@ -24,7 +24,7 @@ def main(list):
         tmpDay = int(i[1])
         tmpNow = LunarDate(year, tmpMonth, tmpDay)  # 今年的生日日期
         if tmpNow < today:
-            tmpNow = LunarDate(year+1, tmpMonth, tmpDay)  # 今年的生日日期
+            tmpNow = LunarDate(year+1, tmpMonth, tmpDay)  # 明年的生日日期
         # print(tmpNow)
         dis = today - tmpNow
         dis = dis.days
