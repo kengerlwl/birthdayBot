@@ -1,1 +1,5 @@
 .idea
+__pycache__
+邮件发送/__pycache__/message.cpython-37.pyc
+*.pyc
+

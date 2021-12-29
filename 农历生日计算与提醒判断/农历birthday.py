@@ -1,4 +1,5 @@
 # borax==3.3.1
+import copy
 
 from borax.calendars.lunardate import LunarDate
 from 农历生日计算与提醒判断 import facade
@@ -21,10 +22,19 @@ def main(list):
         i = i.split('-')
         tmpMonth = int(i[0])
         tmpDay = int(i[1])
-        tmpNow = LunarDate(year, tmpMonth, tmpDay)
+        nextYearDay = LunarDate(year+1, tmpMonth, tmpDay)  # 明年的生日日期，为了应对年末的特殊日期
+
+        tmpNow = LunarDate(year, tmpMonth, tmpDay)  # 今年的生日日期
         # print(tmpNow)
         dis = today - tmpNow
         dis = dis.days
+
+        dis2 = nextYearDay - today
+        dis2 = dis2.days
+        # print(today,tmpNow,nextYearDay)
+        dis = min(dis, dis2)  # 选取最近的一个，
+
+
         message = None
         if  dis == 0:
             message = '今天'
@@ -35,6 +45,7 @@ def main(list):
         elif dis == -3:
             message = '大后天'
 
+        # print(message, dis)
 
         # 若在范围内
         if message:
@@ -50,3 +61,10 @@ def main(list):
         else:
             facade.update(message=name+ '的生日 今天不需要通知')
 
+
+
+if __name__ == '__main__':
+    list = [
+        ['1-1', 'test1']  #第一个是农历生日，第二个是名字
+    ]
+    main(list)
