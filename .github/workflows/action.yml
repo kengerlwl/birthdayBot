@@ -1,8 +1,6 @@
 # 脚本机器人的名字
 name: 'GitHub Actions  Bot'
 
-
-
 # 什么时候执行
 on:
   # 当push的时候
