@@ -1,15 +1,21 @@
-# BirthdayReminder
+# birthdaybot
 
 github action 生日提醒
 
+
+
 # 使用
 
-修改config文件夹下的yaml文件即可，格式见注释
+在`config`文件夹中
 
-# 参考
+`config.yaml`文件配置自己的待提醒的邮箱
 
-https://github.com/2892211452/birthdayBot
+`people.yaml`文件配置生日提醒列表以及具体参数。具体可以参考demo
 
-# Repository
 
-活动，动
+
+# 升级
+
+合并了其他开发者的分之后，变得更加智能易用规范了。
+
+感谢[Extrader-home](https://github.com/Extrader-home)的新版本贡献
