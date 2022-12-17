@@ -43,4 +43,4 @@ jobs:
 
       # 执行脚本
       - name: 'runBash'
-        run: bash ./test.sh
+        run: bash ./run.sh
