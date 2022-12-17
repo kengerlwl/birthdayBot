@@ -3,7 +3,40 @@ People:
 #     Day : "2021-12-16"  # 日期格式为yyyy-MM-dd，若不知道年份则设置为0000
 #     Calendar : "lunar"  # 阴历：lunar 阳历：solar
 #     DistanceConfig : 1  # 设置生日提前几天提醒, 最大为3, 0为当天提醒
-  - Name : "Me"
-    Day : "2001-12-17"
-    Calendar : "solar"
+  - Name : "mt"
+    Day : "1974-6-26"
+    Calendar : "lunar"
+    DistanceConfig : 3
+  - Name : "fz"
+    Day : "1970-7-29"
+    Calendar : "lunar"
+    DistanceConfig : 3
+  - Name : "lw"
+    Day : "1996-10-11"
+    Calendar : "lunar"
+    DistanceConfig : 3
+  - Name : "蕾哥"
+    Day : "199712-6"
+    Calendar : "lunar"
+    DistanceConfig : 3
+  - Name : "孔桑"
+    Day : "1999-11-10"
+    Calendar : "lunar"
     DistanceConfig : 1
+
+  - Name : "yzh"
+    Day : "2000-7-15"
+    Calendar : "lunar"
+    DistanceConfig : 1
+
+  - Name : "mt"
+    Day : "1974-6-26"
+    Calendar : "lunar"
+    DistanceConfig : 1
+
+  - Name : "st"
+    Day : "2000-11-4"
+    Calendar : "lunar"
+    DistanceConfig : 1
+
+
