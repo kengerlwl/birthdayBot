@@ -8,7 +8,7 @@ People:
     Calendar : "lunar"
     DistanceConfig : 3
   - Name : "fz"
-    Day : "1970-7-29"
+    Day : "1970-07-29"
     Calendar : "lunar"
     DistanceConfig : 3
   - Name : "lw"
@@ -16,7 +16,7 @@ People:
     Calendar : "lunar"
     DistanceConfig : 3
   - Name : "蕾哥"
-    Day : "199712-6"
+    Day : "199712-06"
     Calendar : "lunar"
     DistanceConfig : 3
   - Name : "孔桑"
@@ -25,17 +25,17 @@ People:
     DistanceConfig : 1
 
   - Name : "yzh"
-    Day : "2000-7-15"
+    Day : "2000-07-15"
     Calendar : "lunar"
     DistanceConfig : 1
 
   - Name : "mt"
-    Day : "1974-6-26"
+    Day : "1974-06-26"
     Calendar : "lunar"
     DistanceConfig : 1
 
   - Name : "st"
-    Day : "2000-11-4"
+    Day : "2000-11-04"
     Calendar : "lunar"
     DistanceConfig : 1
 
