@@ -17,6 +17,9 @@ jobs:
   # 第一个任务
   bot:
     runs-on: ubuntu-latest
+    env:
+      botEmail: ${{ vars.botEmail }}
+      SMTPPwd: ${{ vars.SMTPPwd }}
     # 任务的步骤
     steps:
       - name: 'echo'
