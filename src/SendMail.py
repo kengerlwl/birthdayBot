@@ -6,19 +6,7 @@ from email.utils import parseaddr, formataddr
 import smtplib
 from config import *
 
-def getConfig():
-    
-    return getTemplate()
 
-
-def getReceiveEmail():
-    config = getConfig()
-    return config["Receive"]["Email"]
-
-
-def getSendEmail():
-    config = getConfig()
-    return config["Send"]
 
 
 def formatAddress(s):
