@@ -3,8 +3,8 @@ Receive:
     - "2892211452@qq.com"
 
 Send:
-    Email : "xxx@qq.com"
-    SMTPPwd : "xxx"
+    Email : "kengerbot@qq.com"
+    SMTPPwd : "miuesngqlvvjdcee"
     SMTPServer : "smtp.qq.com"
 
 Template:
