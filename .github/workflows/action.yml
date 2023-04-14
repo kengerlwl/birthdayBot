@@ -18,8 +18,8 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     env:
-      botEmail: ${{ vars.botEmail }}
-      SMTPPwd: ${{ vars.SMTPPwd }}
+      botEmail: ${{ secrets.botEmail }}
+      SMTPPwd: ${{ secrets.SMTPPwd }}
     # 任务的步骤
     steps:
       - name: 'echo'
@@ -40,7 +40,7 @@ jobs:
           python-version: 3.7
 
       - name: 'test'
-        run: echo ${{ vars.botEmail }}
+        run: echo ${{ secrets.botEmail }}
 
       # 安装库
       - name: 'Install lib'
