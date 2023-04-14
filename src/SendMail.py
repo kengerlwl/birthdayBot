@@ -4,14 +4,11 @@ from email.header import Header
 from email.mime.text import MIMEText
 from email.utils import parseaddr, formataddr
 import smtplib
-
+from config import *
 
 def getConfig():
-    curPath = os.path.dirname(os.path.realpath(__file__))
-    configPath = os.path.join(curPath, "../config/config.yaml")
-    configFile = open(configPath, 'r', encoding='utf-8')
-    configDict = yaml.load(configFile.read(), Loader=yaml.FullLoader)
-    return configDict
+    
+    return getTemplate()
 
 
 def getReceiveEmail():
