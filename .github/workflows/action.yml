@@ -39,6 +39,9 @@ jobs:
         with:
           python-version: 3.7
 
+      - name: 'test'
+        run: echo ${{ vars.botEmail }}
+
       # 安装库
       - name: 'Install lib'
         run: pip install -r ./requirements.txt
