@@ -1,3 +1,6 @@
 
 src/__pycache__/Calendar.cpython-39.pyc
 *.pyc
+.DS_Store
+.idea
+*/__pycache__

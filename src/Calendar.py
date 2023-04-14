@@ -4,28 +4,15 @@ from datetime import date
 from borax.calendars.lunardate import LunarDate
 from borax.calendars.birthday import actual_age_lunar
 from src.SendMail import SendMail
+from config import *
 
 
-def getPeople():
-    curPath = os.path.dirname(os.path.realpath(__file__))
-    peoplePath = os.path.join(curPath, "../config/people.yaml")
-    peopleFile = open(peoplePath, 'r', encoding='utf-8')
-    peopleDict = yaml.load(peopleFile.read(), Loader=yaml.FullLoader)
-    return peopleDict["People"]
-
-
-def getTemplate():
-    curPath = os.path.dirname(os.path.realpath(__file__))
-    peoplePath = os.path.join(curPath, "../config/config.yaml")
-    peopleFile = open(peoplePath, 'r', encoding='utf-8')
-    peopleDict = yaml.load(peopleFile.read(), Loader=yaml.FullLoader)
-    return peopleDict["Template"]
 
 
 def getMessage(Distance, DistanceConfig, name, Age, calendar, BirthDay, BirthMonth, BirthYear):
     message = None
     if DistanceConfig > 3:
-        print("Distance error Need 0-3!")
+        print("Distance error Need between 0 and 3 !")
         exit()
     if Distance <= DistanceConfig:
         if Distance == 0:

@@ -36,17 +36,17 @@ class SendMail:
         self.sendEmail(title, text)
 
     def sendEmail(self, title, text):
-        for sendEmail in getSendEmail():
-            server = smtplib.SMTP(sendEmail["SMTPServer"], 587)  # 25 is default smtp port, check mail setting
-            # server.set_debuglevel(1)
-            server.login(sendEmail["Email"], sendEmail["SMTPPwd"])
+        sendEmail = getSendEmail()
+        server = smtplib.SMTP(sendEmail["SMTPServer"], 587)  # 25 is default smtp port, check mail setting
+        # server.set_debuglevel(1)
+        server.login(sendEmail["Email"], sendEmail["SMTPPwd"])
 
-            msg = MIMEText(self.text, "plain", "utf-8")
-            msg["From"] = formatAddress("Birthday Reminder Service<%s>" % sendEmail["Email"])
-            msg["Subject"] = Header(self.title, "utf-8").encode()
-            for ta in getReceiveEmail():
-                msg["To"] = formatAddress("SiteGroup<%s>" % ta)
-                server.sendmail(sendEmail["Email"], ta, msg.as_string())
+        msg = MIMEText(self.text, "plain", "utf-8")
+        msg["From"] = formatAddress("Birthday Reminder Service<%s>" % sendEmail["Email"])
+        msg["Subject"] = Header(self.title, "utf-8").encode()
+        for ta in getReceiveEmail():
+            msg["To"] = formatAddress("SiteGroup<%s>" % ta)
+            server.sendmail(sendEmail["Email"], ta, msg.as_string())
             server.quit()
 
 
