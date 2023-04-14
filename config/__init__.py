@@ -19,7 +19,6 @@ def getTemplate():
     configFile = open(configPath, 'r', encoding='utf-8')
     confiDict = yaml.load(configFile.read(), Loader=yaml.FullLoader)
 
-    print(confiDict)
 
     # 
     botEmail = os.environ.get('botEmail')
@@ -29,5 +28,6 @@ def getTemplate():
         confiDict['Send']['Email'] = botEmail
     if SMTPPwd:
         confiDict['Send']['SMTPPwd'] = SMTPPwd
+    print(confiDict)
 
     return confiDict["Template"]
