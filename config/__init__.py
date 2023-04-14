@@ -24,6 +24,7 @@ def getTemplate():
     # 
     botEmail = os.environ.get('botEmail')
     SMTPPwd = os.environ.get('SMTPPwd')
+    print("botEmail", botEmail)
     if botEmail:
         confiDict['Send']['Email'] = botEmail
     if SMTPPwd:
