@@ -48,7 +48,7 @@ def getConfig():
     if SMTPPwd:
         confiDict['Send']['SMTPPwd'] = SMTPPwd
     print(confiDict)
-    return configDict
+    return confiDict
 
 def getReceiveEmail():
     config = getConfig()
