@@ -23,12 +23,12 @@ def getTemplate():
     # 
     botEmail = os.environ.get('botEmail')
     SMTPPwd = os.environ.get('SMTPPwd')
-    print("botEmail", botEmail)
+    # print("botEmail", botEmail)
     if botEmail:
         confiDict['Send']['Email'] = botEmail
     if SMTPPwd:
         confiDict['Send']['SMTPPwd'] = SMTPPwd
-    print(confiDict)
+    # print(confiDict)
 
     return confiDict["Template"]
 
@@ -42,12 +42,12 @@ def getConfig():
 
     botEmail = os.environ.get('botEmail')
     SMTPPwd = os.environ.get('SMTPPwd')
-    print("botEmail", botEmail)
+    # print("botEmail", botEmail)
     if botEmail:
         confiDict['Send']['Email'] = botEmail
     if SMTPPwd:
         confiDict['Send']['SMTPPwd'] = SMTPPwd
-    print(confiDict)
+    # print(confiDict)
     return confiDict
 
 def getReceiveEmail():
