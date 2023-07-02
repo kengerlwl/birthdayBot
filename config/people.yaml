@@ -38,3 +38,8 @@ People:
     Day : "0000-4-15"
     Calendar : "solar"
     DistanceConfig : 3
+
+  - Name : "hbx"
+    Day : "0000-9-28"
+    Calendar : "solar"
+    DistanceConfig : 3
