@@ -43,9 +43,8 @@ People:
     Day : "0000-9-28"
     Calendar : "solar"
     DistanceConfig : 3
-
-    
- - Name : "xy"
+ 
+  - Name : "xy"
     Day : "2001-11-23"
     Calendar : "lunar"
     DistanceConfig : 3
