@@ -45,7 +45,7 @@ People:
     DistanceConfig : 3
 
     
- - Name : "hbx"
+ - Name : "xy"
     Day : "2001-11-23"
     Calendar : "lunar"
     DistanceConfig : 3
