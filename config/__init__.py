@@ -2,8 +2,6 @@ import yaml
 import os
 
 
-
-
 def getPeople():
     curPath = os.path.dirname(os.path.realpath(__file__))
     peoplePath = os.path.join(curPath, "../config/people.yaml")

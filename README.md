@@ -23,3 +23,10 @@ github action 生日提醒
 合并了其他开发者的分之后，变得更加智能易用规范了。
 
 感谢[Extrader-home](https://github.com/Extrader-home)的新版本贡献
+
+
+
+# docker
+`sudo docker build -t birthdaybot:v1.1 . `
+
+
